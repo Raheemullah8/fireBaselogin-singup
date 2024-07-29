@@ -1,0 +1,81 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2rem;
+    color: #fff; /* White color for contrast */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Content Styles */
+.content {
+    background: #fff; /* White background for content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center; /* Center align text and button */
+}
+
+/* Email ID Styles */
+#emailid {
+    font-size: 1.2rem;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+/* Logout Button Styles */
+#logout {
+    background-color: #dc3545; /* Red color for logout button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#logout:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    #logout {
+        font-size: 14px;
+        padding: 10px 15px; /* Adjust button size for smaller screens */
+    }
+
+    #emailid {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}

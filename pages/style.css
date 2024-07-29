@@ -1,0 +1,140 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    color: #fff; /* White text color */
+    font-size: 2.5rem; /* Larger font size for prominence */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Form Styles */
+  form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* For positioning the message within the form */
+  }
+  
+  /* Form Hover Effect */
+  form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Input Styles */
+  input {
+    display: block;
+    width: calc(100% - 22px); /* Adjust for padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Link Styles */
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Message Styles */
+  #msg {
+    color: #333;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center; /* Center the text */
+  }
+  
+  /* Success Message */
+  #msg.success {
+    color: #28a745; /* Green for success */
+  }
+  
+  /* Error Message */
+  #msg.error {
+    color: #dc3545; /* Red for error */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    input {
+      font-size: 14px;
+    }
+  
+    #msg {
+      font-size: 14px; /* Adjust message font size */
+    }
+  
+    h1 {
+      font-size: 2rem; /* Slightly smaller font size for smaller screens */
+    }
+  }
+  
